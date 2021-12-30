@@ -98,23 +98,7 @@ Install `pip` package
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Adapt code to user's goal and run in the server shell. Sitemaps can usually be run in the foreground since they are a quick scrape:
-
-```shell
-python sitemap_scraper.py
-``` 
-
-If a large amount of links are being scraped (here there are over 320k) then make sure to first mount the data folder to a bucket. On `googlecloud` first create the bucket and in the server shell mount using the following command:
-
-```shell
-gcsfuse example-bucket /path/to/mount
-```
-
-When running large scrape jobs it is also clever to run the process in the background:
-
-```shell
-nohup python links_scraper.py &
-``` 
+Code can be used as is for learning purposes. Or it can be adapted to user's goal and run in the server shell or locally. Follow the **Roadmap** and feel free to get in touch with any and all questions or comments. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
