@@ -9,4 +9,4 @@ with open('./data/pickled_lists/total_links_list.pkl', 'rb') as fpick:
 
 scraper = Scraper(link_list=links, root_url=ROOT_URL, folders=True)
 
-scraper.get_html()
+scraper.check_status()
