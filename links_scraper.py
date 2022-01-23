@@ -1,8 +1,12 @@
+'''
+Scrapes sites from sitemap list, signals finish with email logging handler
+'''
 import pickle
 import logging
 from logging.handlers import SMTPHandler
-from config import config
 from samssimplescraper import Scraper
+from config import config
+
 
 logger = logging.getLogger()
 
@@ -33,7 +37,7 @@ logger.addHandler(email_handler)
 ROOT_URL = "https://www.winemag.com/buying-guide/"
 
 with open('./data/pickled_lists/total_links_list.pkl', 'rb') as fpick:
-        links = pickle.load(fpick)
+    links = pickle.load(fpick)
 
 scraper = Scraper(link_list=links[0:5], root_url=ROOT_URL, folders=True)
 
