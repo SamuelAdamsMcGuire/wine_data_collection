@@ -24,3 +24,4 @@ jobs:
       run: |
         pylint sitemap_scraper.py
         pylint links_scraper.py
+        pylint status_checker.py
