@@ -5,7 +5,7 @@ import pickle
 import logging
 from logging.handlers import SMTPHandler
 from samssimplescraper import Scraper
-from config import config
+from config_example import config
 
 
 logger = logging.getLogger()
