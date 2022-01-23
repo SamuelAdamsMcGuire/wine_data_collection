@@ -1,6 +1,6 @@
 <div id="top"></div>
 
-![Python application](https://github.com/SamuelMcGuire/wine_data_collection/workflows/Python%20application/badge.svg)
+![Python application](https://github.com/SamuelAdamsMcGuire/wine_data_collection/workflows/Python%20application/badge.svg)
 
 <h3 align="center">Wine Data Collection</h3>
 
