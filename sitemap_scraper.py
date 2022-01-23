@@ -12,7 +12,7 @@ logging.basicConfig(
     filename='./logs/sitemap_scraper.log', filemode='w'
 )
 
-# instantiate LinksRetriever with the winemag sitemap
+# instantiate LinksRetriever with the winemag.com sitemap
 links_retriever = LinksRetriever(url='https://www.winemag.com/sitemap_index.xml', folders=True)
 
 # get a list of the link using .get_sitemap_links method, filter for only wine review sitemaps
