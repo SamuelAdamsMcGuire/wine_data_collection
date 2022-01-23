@@ -1,3 +1,6 @@
+'''
+scrapes sitemaps from winemag and pickles the links for later use
+'''
 import logging
 import pickle
 from samssimplescraper import LinksRetriever
@@ -24,4 +27,4 @@ logging.info('The final web links list is %s links long', len(total_links))
 
 # save list for use on multiple servers
 with open('./data/pickled_lists/total_links_list.pkl', 'wb') as fp:
-        pickle.dump(total_links, fp)
+    pickle.dump(total_links, fp)
